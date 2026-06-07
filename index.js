@@ -8,7 +8,10 @@ const app = epxress();
 const PORT = process.env.PORT ?? 8000;
 
 app.get('/', (req, res) => {
-    return res.json({ message: "Server is healthy V2" })
+    return res.json({
+        message: "Server is healthy V2",
+        status: "success"
+    })
 })
 
 app.listen(PORT, () => {
